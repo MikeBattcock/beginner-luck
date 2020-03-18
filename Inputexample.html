@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+</head>
+<body>
+
+<h1>Mike Battcock</h1>
+
+<h2>Mike and the boys, work from home support group</h2>
+</body>
+</html>
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+</style>
+</head>
+
+<div class="container">
+  <img src="mike.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Fill out the information below!</div>
+  </div>
+</div>
+
+</body>
+
+
+
+<h1Enter all pertinent info below to join</h1>
+<p>Please enter all of the appropriate information and files.</p>
+
+<label for="avatar">Upload your file here:</label>
+ <br />
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+<label for="phone">Enter your phone number:</label>
+ 
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+
+
+<label for="name"> Enter your name :</label>
+
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+ <br />
+  <br />
+<input type="submit" value="Send Request">
+<footer>
+        <p>© Mike Battcock Industries</p>
+    </footer>
+</body>
+</html>
